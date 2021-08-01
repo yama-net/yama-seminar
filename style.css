@@ -1,0 +1,520 @@
+@charset utf-8;
+
+/* 基本設定 */
+
+html {
+    /* scroll-behavior: smooth; */
+    font-family:'Times New Roman', Times, serif;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+section {
+    width: 100%;
+    height: auto;
+}
+
+section ul li {
+    list-style-type: none;
+    display: inline-block;
+    justify-content: center;
+}
+
+h2 {
+    border-left: 4px solid lightgreen;
+    padding-left: 20px;
+}
+
+.btn {
+    width: 200px;
+    height: 50px;
+    color: #fff;
+    background-color: green;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.btn:hover {
+    opacity: 0.85;
+}
+
+.btn1 {
+    position: absolute;
+    left: 70px;
+    top: 450px;
+}
+
+.btn2 {
+    padding: 10px 30px;
+}
+
+table {
+    border: 1px solid black;
+    margin-left: 20px;
+}
+
+th,td {
+    border: 1px solid black;
+}
+
+/* ヘッダー */
+header {
+    width: 100%;
+    height: 42px;
+}
+
+.header_inner {
+    width: 1150px;
+    max-width: 1150px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.header_inner h1 a {
+    float: left;
+}
+
+.header_inner ul {
+    display: flex;
+    float: right;
+}
+
+.header_inner ul li {
+    padding: 0 20px;
+    display: block;
+    height: 26px;
+    line-height: 26px;
+    border-left: 1px solid gray;
+}
+
+.header_inner ul li:last-child {
+    border-right: 1px solid gray;
+}
+
+.tel {
+    position: absolute;
+    top: -15px;
+    right: 5px;
+    background-color: yellow;
+    font-size: 0.9rem;
+    letter-spacing: 2px;
+}
+
+/* メインイメージ */
+.hidden {
+    display: none;
+}
+
+.main_image img {
+    width: 100%;
+    height: auto;
+}
+
+/* はじめに */
+.introduction {
+    width: 900px;
+    height: auto;
+    margin: 50px auto;
+    font-size: 24px;
+    padding: 0 30px;
+}
+
+.introduction p span {
+    display: inline-block;
+    background-image: linear-gradient(transparent 60%, #ff6 60%);
+}
+
+#classroom {
+    width: 800px;
+    height: auto;
+    margin: 50px auto;
+}
+
+#classroom ul li dl dt {
+    margin-top: 20px;
+}
+
+#classroom ul li dl dd {
+    margin-bottom: 20px;
+}
+
+#classroom ul li dl dt img {
+    width: 800px;
+    border-radius: 40% 70% 50% 30%/50%;
+}
+
+#classroom ul li dl dd {
+    font-size: 1.3rem;
+    padding: 20px 0 0 20px;
+}
+
+#teacher {
+    width: 800px;
+    height: auto;
+    margin: 40px auto;
+}
+
+.teacher_person {
+    display: flex;
+    margin: 15px 0;
+}
+
+.teacher_name p {
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.teacher_person img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+}
+
+.teacher_text {
+    width: 500px;
+    margin-left: 30px;
+    padding: 20px;
+    font-size: 1.2rem;
+}
+
+/* 入塾までの流れ */
+#admission {
+    width: 1150px;
+    margin: 0 auto;
+}
+
+#admission ul li {
+    width: 350px;
+    height: auto;
+}
+
+#admission ul li dl dt img {
+    width: 350px;
+    padding: 10px;
+}
+
+#admission ul li dl dd {
+    position: relative;
+    margin-top: 15px;
+    margin-left: 18px;
+}
+
+#admission ul li dl dd span {
+    position: absolute;
+    top: -220px;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+/* 料金体系 */
+#price {
+    width: 1150px;
+    margin: 30px auto;
+}
+
+#price ul li {
+    width: 330px;
+    justify-content: space-between;
+    margin: 10px;
+}
+
+#price ul li dl {
+    text-align: center;
+    position: relative;
+}
+
+#price ul li dl dt img {
+    width: 320px;
+    border: 1px dashed gray;
+    border-radius: 50%;
+}
+
+#price ul li dl dd {
+    font-size: 1.3rem;
+    margin-right: 20px;
+}
+
+.gakusei {
+    margin-top: 20px;
+}
+
+/* お問い合わせ */
+#contact {
+    width: 800px;
+    height: auto;
+    margin: 0 auto;
+}
+
+#contact table {
+    margin: 30px 0;
+}
+
+#contact table tr th {
+    font-size: 1.3rem;
+    padding: 10px;
+}
+
+#contact table tr td {
+    font-size: 1.3rem;
+    padding: 10px;
+}
+
+/* フッター */
+footer {
+    color: #FFF;
+    height: 80px;
+    line-height: 80px;
+    background-color: gray;
+    text-align: center;
+}
+
+/* タブレット、画面横幅1024px以下 */
+@media (max-width: 1024px) {
+
+    /* 基本設定 */
+    html {
+        font-size: 62.5%;
+    }
+
+    body p,
+    body li,
+    body dd {
+        font-size: 1.6rem;
+    }
+
+    /* 各セクション横幅共通 */
+    .introduction,
+    #teacher,
+    #admission,
+    #price,
+    #contact {
+        max-width: 60rem;
+    }
+
+    /* 各セクション見出し大きさ共通 */
+    #classroom h2,
+    #teacher h2,
+    #admission h2,
+    #price h2,
+    #contact h2 {
+        font-size: 2.5rem;
+    }
+
+
+    /* ヘッダー */
+    .header_inner h1 {
+        font-size: 2.4rem;
+        padding-left: 1.8rem;
+    }
+
+    .header_inner {
+        position: relative;
+    }
+
+    .header_inner span {
+        display: none;
+    }
+
+    /* はじめに */
+    .introduction,
+    .introduction p,
+    .introduction ol li {
+        font-size: 2rem;
+    }
+
+    .introduction {
+        padding-right: 2rem;
+    }
+
+    .introduction p span {
+        display: inline;
+    }
+
+    /* 3つの特徴 */
+    #classroom h2 {
+        margin-left: 3rem;
+    }
+
+    #classroom ul li dl dt img {
+        max-width: 55rem;
+    }
+
+    #classroom ul li dl dd {
+        font-size: 1.8rem;
+    }
+
+    /* 講師紹介 */
+    .teacher_name p,
+    .teacher_text p {
+        font-size: 2rem;
+    }
+
+    /* 入塾までの流れ */
+    #admission ul li {
+        width: 500px;
+        height: auto;
+        margin-left: 2rem;
+    }
+
+    #admission ul li dl {
+        position: relative;
+    }
+
+    #admission ul li dl dt img {
+        width: 50rem;
+    }
+
+    #admission ul li dl dd {
+        font-size: 2rem;
+        margin-top: 1rem;
+        margin-bottom: 2.5rem;
+    }
+
+    #admission ul li dl dd span {
+        font-size: 2rem;
+        position: absolute;
+        top: -300px;
+    }
+
+    /* 料金体系 */
+    #price ul li:first-child dl a,
+    #price ul li:nth-child(2) dl a {
+        display: none;
+    }
+
+    #price ul li dl dd {
+        font-size: 2rem;
+    }
+
+    #price ul li:nth-child(3) dl a {
+        font-size: 2rem;
+    }
+
+    /* お問い合わせ */
+    #contact table tr th,
+    #contact table tr td {
+        font-size: 2.4rem;
+    }
+}
+
+/* スマホ、画面横幅599px以下 */
+@media (max-width: 599px) {
+    body h2 {
+        font-size: 2rem;
+    }
+
+    body p,
+    body li,
+    body dd {
+        font-size: 1.6rem;
+    }
+
+    /* 各セクション横幅共通 */
+    header,
+    .introduction,
+    #teacher,
+    #admission,
+    #price,
+    #contact {
+        max-width: 50rem;
+    }
+
+    /* 各セクションh2見出し調整 */
+    #classroom h2,
+    #teacher h2,
+    #admission h2,
+    #price h2,
+    #contact h2 {
+        margin-left: 2rem;
+    }
+
+    /* ヘッダー */
+    .header_inner h1 {
+        font-size: 1.8rem;
+        padding-left: 1.2rem;
+    }
+
+    /* ヘッダー内 */
+    .header_inner {
+        position: relative;
+    }
+
+    .header_inner span {
+        display: block;
+        position: absolute;
+        right: 68rem;
+        font-size: 1.2rem;
+    }
+
+    /* はじめに */
+    .introduction {
+        overflow-wrap: break-word;
+    }
+    
+    /* 山本ゼミナール3つの特徴 */
+    #classroom ul li dl dt img {
+        max-width: 40rem;
+    }
+
+    #classroom ul li dl dd {
+        margin-left: 1.2rem;
+        font-size: 1.4rem;
+    }
+
+    /* 講師紹介 */
+    .teacher_person {
+        display: block;
+    }
+
+    .teacher_name img {
+        margin-left: 12rem;
+    }
+
+    .teacher_name p {
+        font-size: 1.6rem;
+        margin-right: 1.5rem;
+    }
+
+    .teacher_text {
+        max-width: 45rem;
+        margin-top: -2.5rem;
+    }
+
+    /* 入塾までの流れ */
+    #admission ul li {
+        width: 400px;
+        height: auto;
+    }
+
+    #admission ul li dl dd {
+        font-size: 1.8rem;
+    }
+
+    #admission ul li dl dt img {
+        width: 40rem;
+    }
+
+    #admission ul li dl dd span {
+        font-size: 1.6rem;
+        position: absolute;
+        top: -250px;
+    }
+
+    /* お問い合わせ */
+    #contact table tr th,
+    #contact table tr td {
+        font-size: 1.8rem;
+    }
+    
+    #contact iframe {
+        max-width: 50rem;
+    }
+
+}
+
